@@ -1,16 +1,18 @@
-
-# Ajout de la Gem awesome_print qui permet d'ajouter des couleurs à un élément affiché.
 require 'awesome_print'
+#this gems helps us to create the beautiful table in this project with the very interesting methods for other cases
 
 class Board
-  # Ici redéclare ici l'array pour pouvoir l'utiliser dans cette class.
   def initialize
-    # (le 0 permet de considérer la première case comme l'élément 1 de l'array).
+  	# these numbers will be the serial number for each celle and they will be appearing in the celles.	
+  	#the player must select one of them for putting the symbole in the selected celle.
+  	# we have put "0" for defining the position of players before starting the game 
+  	#and make it more raisonnable the game which starting of one instead of zero. 
     @@array = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
   end
 
-  # Cette méthode permet d'afficher le plateau initial.
-  def initial_board
+ 
+  def initial_board 
+  	#this method is for showing the table for starting the game
     puts top_top = '     |     |     '
     puts top_middle = "  #{@@array[1]}  |  #{@@array[2]}  |  #{@@array[3]}  "
     puts top_bottom = '_____|_____|_____'
