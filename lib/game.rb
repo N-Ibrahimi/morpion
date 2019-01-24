@@ -72,7 +72,7 @@ class Game
     puts bottom_bottom = '     |     |     '
     # when the player win the game this message will be display 
     return puts "🎊🎊🎊 #{@player1.name} you Win! 🎊🎊🎊" if win_condition == true
-    #return win_condition == true ? (puts "#{@player2.name} à gagné ! 🎉") : (puts "égalité")
+    
 
 
 # this part is for 2ed palyer selection 
@@ -94,7 +94,7 @@ class Game
     puts bottom_bottom = '     |     |     '
     # when the player win the game this message will be display 
     return puts "🎊🎊🎊 #{@player2.name} you Win ! 🎊🎊🎊" if win_condition == true
-    #return win_condition == true ? (puts "#{@player2.name} à gagné ! 🎉") : (puts "égalité")
+  
 
     turn
   end
